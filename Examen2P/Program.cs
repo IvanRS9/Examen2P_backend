@@ -1,5 +1,8 @@
+using Examen2P.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddSqlServer<ExamenContext>(builder.Configuration.GetConnectionString("cadenaSQL"));
 // Add services to the container.
 
 builder.Services.AddControllers();

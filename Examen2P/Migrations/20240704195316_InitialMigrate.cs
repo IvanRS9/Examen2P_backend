@@ -68,16 +68,16 @@ namespace Examen2P.Migrations
                 columns: new[] { "Id", "CategoryId", "Components", "CreatedAt", "Description", "Image", "Name", "Price" },
                 values: new object[,]
                 {
-                    { 1, 1, "Intel Core i3, 8GB RAM, 256GB SSD, GTX 1050", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9603), "PC Gamer de entrada", "a", "Xtreme Entry", 12000f },
-                    { 2, 2, "AMD Ryzen 5, 16GB RAM, 512GB SSD, GTX 1660", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9617), "PC Gamer de gama media baja", "a", "Mid Range Warrior", 18000f },
-                    { 3, 3, "Intel Core i5, 16GB RAM, 1TB SSD, RTX 2060", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9620), "PC Gamer de gama media", "a", "Gamer Pro", 25000f },
-                    { 4, 4, "AMD Ryzen 7, 32GB RAM, 1TB SSD, RTX 2070", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9622), "PC Gamer de gama media alta", "a", "Elite Gaming", 32000f },
-                    { 5, 5, "Intel Core i7, 32GB RAM, 2TB SSD, RTX 2080 Ti", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9624), "PC Gamer de gama alta", "a", "Ultimate Beast", 45000f },
-                    { 6, 1, "AMD Ryzen 3, 8GB RAM, 256GB SSD, RX 550", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9628), "PC Gamer de entrada", "a", "Starter Pack", 11000f },
-                    { 7, 2, "Intel Core i3, 16GB RAM, 512GB SSD, GTX 1650", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9629), "PC Gamer de gama media baja", "a", "Budget Pro", 16000f },
-                    { 8, 3, "AMD Ryzen 5, 16GB RAM, 1TB SSD, RTX 3050", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9631), "PC Gamer de gama media", "a", "Performance Master", 23000f },
-                    { 9, 4, "Intel Core i5, 32GB RAM, 1TB SSD, RTX 3070", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9633), "PC Gamer de gama media alta", "a", "High End Fighter", 35000f },
-                    { 10, 5, "AMD Ryzen 9, 64GB RAM, 2TB SSD, RTX 3090", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9636), "PC Gamer de gama alta", "a", "Godlike Power", 50000f }
+                    { 1, 1, "Intel Core i3, 8GB RAM, 256GB SSD, GTX 1050", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9603), "PC Gamer de entrada", "baja.jpg", "Xtreme Entry", 12000f },
+                    { 2, 2, "AMD Ryzen 5, 16GB RAM, 512GB SSD, GTX 1660", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9617), "PC Gamer de gama media baja", "media-baja.jpg", "Mid Range Warrior", 18000f },
+                    { 3, 3, "Intel Core i5, 16GB RAM, 1TB SSD, RTX 2060", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9620), "PC Gamer de gama media", "media.jpg", "Gamer Pro", 25000f },
+                    { 4, 4, "AMD Ryzen 7, 32GB RAM, 1TB SSD, RTX 2070", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9622), "PC Gamer de gama media alta", "media-alta.jpg", "Elite Gaming", 32000f },
+                    { 5, 5, "Intel Core i7, 32GB RAM, 2TB SSD, RTX 2080 Ti", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9624), "PC Gamer de gama alta", "alta.jpg", "Ultimate Beast", 45000f },
+                    { 6, 1, "AMD Ryzen 3, 8GB RAM, 256GB SSD, RX 550", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9628), "PC Gamer de entrada", "baja2.jpg", "Starter Pack", 11000f },
+                    { 7, 2, "Intel Core i3, 16GB RAM, 512GB SSD, GTX 1650", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9629), "PC Gamer de gama media baja", "media-baja2.jpg", "Budget Pro", 16000f },
+                    { 8, 3, "AMD Ryzen 5, 16GB RAM, 1TB SSD, RTX 3050", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9631), "PC Gamer de gama media", "media2.jpg", "Performance Master", 23000f },
+                    { 9, 4, "Intel Core i5, 32GB RAM, 1TB SSD, RTX 3070", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9633), "PC Gamer de gama media alta", "media-alta2.jpg", "High End Fighter", 35000f },
+                    { 10, 5, "AMD Ryzen 9, 64GB RAM, 2TB SSD, RTX 3090", new DateTime(2024, 7, 4, 13, 53, 15, 826, DateTimeKind.Local).AddTicks(9636), "PC Gamer de gama alta", "alta2.jpg", "Godlike Power", 50000f }
                 });
 
             migrationBuilder.CreateIndex(

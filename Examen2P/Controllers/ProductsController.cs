@@ -22,9 +22,17 @@ namespace Examen2P.Controllers
 
         // GET: api/Products
         [HttpGet]
+        [Route("listarProductos")]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
-            return await _context.Products.ToListAsync();
+            var products = await _context.Products.ToListAsync();
+
+            if (products == null)
+            {
+				return NotFound();
+			}
+
+            return Ok(products);
         }
 
         // GET: api/Products/5
@@ -40,6 +48,20 @@ namespace Examen2P.Controllers
 
             return product;
         }
+
+        // GET:api/Products/Categories
+        [HttpGet("GetProductByCategory/{id}")]
+        public async Task<IActionResult> GetProductByCategory(int id)
+        {
+			var products = await _context.Products.Where(p => p.CategoryId == id).ToListAsync();
+
+			if (products == null)
+            {
+				return NotFound();
+			}
+
+			return Ok(products);
+		}
 
         // PUT: api/Products/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

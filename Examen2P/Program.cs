@@ -10,6 +10,15 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Definir CORS
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy("NuevaPolitica", app =>
+	{
+		app.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod();
+	});
+});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -20,6 +29,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("NuevaPolitica");
 
 app.UseAuthorization();
 
